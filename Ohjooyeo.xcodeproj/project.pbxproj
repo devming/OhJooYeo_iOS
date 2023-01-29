@@ -8,12 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		CA219C302986576200CD41A1 /* OhjooyeoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C2F2986576200CD41A1 /* OhjooyeoApp.swift */; };
-		CA219C322986576200CD41A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C312986576200CD41A1 /* ContentView.swift */; };
+		CA219C322986576200CD41A1 /* WorshipMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C312986576200CD41A1 /* WorshipMainView.swift */; };
 		CA219C342986576300CD41A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA219C332986576300CD41A1 /* Assets.xcassets */; };
 		CA219C372986576300CD41A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA219C362986576300CD41A1 /* Preview Assets.xcassets */; };
 		CA219C412986576400CD41A1 /* OhjooyeoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C402986576400CD41A1 /* OhjooyeoTests.swift */; };
-		CA219C4B2986576400CD41A1 /* OhjooyeoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C4A2986576400CD41A1 /* OhjooyeoUITests.swift */; };
-		CA219C4D2986576400CD41A1 /* OhjooyeoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C4C2986576400CD41A1 /* OhjooyeoUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +34,12 @@
 /* Begin PBXFileReference section */
 		CA219C2C2986576200CD41A1 /* Ohjooyeo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ohjooyeo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA219C2F2986576200CD41A1 /* OhjooyeoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OhjooyeoApp.swift; sourceTree = "<group>"; };
-		CA219C312986576200CD41A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CA219C312986576200CD41A1 /* WorshipMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorshipMainView.swift; sourceTree = "<group>"; };
 		CA219C332986576300CD41A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA219C362986576300CD41A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA219C3C2986576400CD41A1 /* OhjooyeoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OhjooyeoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA219C402986576400CD41A1 /* OhjooyeoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OhjooyeoTests.swift; sourceTree = "<group>"; };
 		CA219C462986576400CD41A1 /* OhjooyeoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OhjooyeoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA219C4A2986576400CD41A1 /* OhjooyeoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OhjooyeoUITests.swift; sourceTree = "<group>"; };
-		CA219C4C2986576400CD41A1 /* OhjooyeoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OhjooyeoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +72,6 @@
 			children = (
 				CA219C2E2986576200CD41A1 /* Ohjooyeo */,
 				CA219C3F2986576400CD41A1 /* OhjooyeoTests */,
-				CA219C492986576400CD41A1 /* OhjooyeoUITests */,
 				CA219C2D2986576200CD41A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,8 +89,8 @@
 		CA219C2E2986576200CD41A1 /* Ohjooyeo */ = {
 			isa = PBXGroup;
 			children = (
-				CA219C2F2986576200CD41A1 /* OhjooyeoApp.swift */,
-				CA219C312986576200CD41A1 /* ContentView.swift */,
+				CA219C5A298657CD00CD41A1 /* Application */,
+				CA219C592986577700CD41A1 /* WorshipMain */,
 				CA219C332986576300CD41A1 /* Assets.xcassets */,
 				CA219C352986576300CD41A1 /* Preview Content */,
 			);
@@ -118,13 +113,20 @@
 			path = OhjooyeoTests;
 			sourceTree = "<group>";
 		};
-		CA219C492986576400CD41A1 /* OhjooyeoUITests */ = {
+		CA219C592986577700CD41A1 /* WorshipMain */ = {
 			isa = PBXGroup;
 			children = (
-				CA219C4A2986576400CD41A1 /* OhjooyeoUITests.swift */,
-				CA219C4C2986576400CD41A1 /* OhjooyeoUITestsLaunchTests.swift */,
+				CA219C312986576200CD41A1 /* WorshipMainView.swift */,
 			);
-			path = OhjooyeoUITests;
+			path = WorshipMain;
+			sourceTree = "<group>";
+		};
+		CA219C5A298657CD00CD41A1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CA219C2F2986576200CD41A1 /* OhjooyeoApp.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA219C322986576200CD41A1 /* ContentView.swift in Sources */,
+				CA219C322986576200CD41A1 /* WorshipMainView.swift in Sources */,
 				CA219C302986576200CD41A1 /* OhjooyeoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,8 +276,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA219C4D2986576400CD41A1 /* OhjooyeoUITestsLaunchTests.swift in Sources */,
-				CA219C4B2986576400CD41A1 /* OhjooyeoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
