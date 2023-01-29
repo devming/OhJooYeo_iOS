@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA219C302986576200CD41A1 /* OhjooyeoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C2F2986576200CD41A1 /* OhjooyeoApp.swift */; };
+		CA219C322986576200CD41A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C312986576200CD41A1 /* ContentView.swift */; };
+		CA219C342986576300CD41A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA219C332986576300CD41A1 /* Assets.xcassets */; };
+		CA219C372986576300CD41A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA219C362986576300CD41A1 /* Preview Assets.xcassets */; };
+		CA219C412986576400CD41A1 /* OhjooyeoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C402986576400CD41A1 /* OhjooyeoTests.swift */; };
+		CA219C4B2986576400CD41A1 /* OhjooyeoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C4A2986576400CD41A1 /* OhjooyeoUITests.swift */; };
+		CA219C4D2986576400CD41A1 /* OhjooyeoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C4C2986576400CD41A1 /* OhjooyeoUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA219C3D2986576400CD41A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA219C242986576200CD41A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA219C2B2986576200CD41A1;
+			remoteInfo = Ohjooyeo;
+		};
+		CA219C472986576400CD41A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA219C242986576200CD41A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA219C2B2986576200CD41A1;
+			remoteInfo = Ohjooyeo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA219C2C2986576200CD41A1 /* Ohjooyeo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ohjooyeo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA219C2F2986576200CD41A1 /* OhjooyeoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OhjooyeoApp.swift; sourceTree = "<group>"; };
+		CA219C312986576200CD41A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CA219C332986576300CD41A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA219C362986576300CD41A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA219C3C2986576400CD41A1 /* OhjooyeoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OhjooyeoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA219C402986576400CD41A1 /* OhjooyeoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OhjooyeoTests.swift; sourceTree = "<group>"; };
+		CA219C462986576400CD41A1 /* OhjooyeoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OhjooyeoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA219C4A2986576400CD41A1 /* OhjooyeoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OhjooyeoUITests.swift; sourceTree = "<group>"; };
+		CA219C4C2986576400CD41A1 /* OhjooyeoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OhjooyeoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA219C292986576200CD41A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA219C392986576400CD41A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA219C432986576400CD41A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA219C232986576200CD41A1 = {
+			isa = PBXGroup;
+			children = (
+				CA219C2E2986576200CD41A1 /* Ohjooyeo */,
+				CA219C3F2986576400CD41A1 /* OhjooyeoTests */,
+				CA219C492986576400CD41A1 /* OhjooyeoUITests */,
+				CA219C2D2986576200CD41A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA219C2D2986576200CD41A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA219C2C2986576200CD41A1 /* Ohjooyeo.app */,
+				CA219C3C2986576400CD41A1 /* OhjooyeoTests.xctest */,
+				CA219C462986576400CD41A1 /* OhjooyeoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA219C2E2986576200CD41A1 /* Ohjooyeo */ = {
+			isa = PBXGroup;
+			children = (
+				CA219C2F2986576200CD41A1 /* OhjooyeoApp.swift */,
+				CA219C312986576200CD41A1 /* ContentView.swift */,
+				CA219C332986576300CD41A1 /* Assets.xcassets */,
+				CA219C352986576300CD41A1 /* Preview Content */,
+			);
+			path = Ohjooyeo;
+			sourceTree = "<group>";
+		};
+		CA219C352986576300CD41A1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CA219C362986576300CD41A1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CA219C3F2986576400CD41A1 /* OhjooyeoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA219C402986576400CD41A1 /* OhjooyeoTests.swift */,
+			);
+			path = OhjooyeoTests;
+			sourceTree = "<group>";
+		};
+		CA219C492986576400CD41A1 /* OhjooyeoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA219C4A2986576400CD41A1 /* OhjooyeoUITests.swift */,
+				CA219C4C2986576400CD41A1 /* OhjooyeoUITestsLaunchTests.swift */,
+			);
+			path = OhjooyeoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA219C2B2986576200CD41A1 /* Ohjooyeo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA219C502986576400CD41A1 /* Build configuration list for PBXNativeTarget "Ohjooyeo" */;
+			buildPhases = (
+				CA219C282986576200CD41A1 /* Sources */,
+				CA219C292986576200CD41A1 /* Frameworks */,
+				CA219C2A2986576200CD41A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ohjooyeo;
+			productName = Ohjooyeo;
+			productReference = CA219C2C2986576200CD41A1 /* Ohjooyeo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA219C3B2986576400CD41A1 /* OhjooyeoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA219C532986576400CD41A1 /* Build configuration list for PBXNativeTarget "OhjooyeoTests" */;
+			buildPhases = (
+				CA219C382986576400CD41A1 /* Sources */,
+				CA219C392986576400CD41A1 /* Frameworks */,
+				CA219C3A2986576400CD41A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA219C3E2986576400CD41A1 /* PBXTargetDependency */,
+			);
+			name = OhjooyeoTests;
+			productName = OhjooyeoTests;
+			productReference = CA219C3C2986576400CD41A1 /* OhjooyeoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA219C452986576400CD41A1 /* OhjooyeoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA219C562986576400CD41A1 /* Build configuration list for PBXNativeTarget "OhjooyeoUITests" */;
+			buildPhases = (
+				CA219C422986576400CD41A1 /* Sources */,
+				CA219C432986576400CD41A1 /* Frameworks */,
+				CA219C442986576400CD41A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA219C482986576400CD41A1 /* PBXTargetDependency */,
+			);
+			name = OhjooyeoUITests;
+			productName = OhjooyeoUITests;
+			productReference = CA219C462986576400CD41A1 /* OhjooyeoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA219C242986576200CD41A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					CA219C2B2986576200CD41A1 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					CA219C3B2986576400CD41A1 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CA219C2B2986576200CD41A1;
+					};
+					CA219C452986576400CD41A1 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CA219C2B2986576200CD41A1;
+					};
+				};
+			};
+			buildConfigurationList = CA219C272986576200CD41A1 /* Build configuration list for PBXProject "Ohjooyeo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA219C232986576200CD41A1;
+			productRefGroup = CA219C2D2986576200CD41A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA219C2B2986576200CD41A1 /* Ohjooyeo */,
+				CA219C3B2986576400CD41A1 /* OhjooyeoTests */,
+				CA219C452986576400CD41A1 /* OhjooyeoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA219C2A2986576200CD41A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA219C372986576300CD41A1 /* Preview Assets.xcassets in Resources */,
+				CA219C342986576300CD41A1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA219C3A2986576400CD41A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA219C442986576400CD41A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA219C282986576200CD41A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA219C322986576200CD41A1 /* ContentView.swift in Sources */,
+				CA219C302986576200CD41A1 /* OhjooyeoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA219C382986576400CD41A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA219C412986576400CD41A1 /* OhjooyeoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA219C422986576400CD41A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA219C4D2986576400CD41A1 /* OhjooyeoUITestsLaunchTests.swift in Sources */,
+				CA219C4B2986576400CD41A1 /* OhjooyeoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA219C3E2986576400CD41A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA219C2B2986576200CD41A1 /* Ohjooyeo */;
+			targetProxy = CA219C3D2986576400CD41A1 /* PBXContainerItemProxy */;
+		};
+		CA219C482986576400CD41A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA219C2B2986576200CD41A1 /* Ohjooyeo */;
+			targetProxy = CA219C472986576400CD41A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CA219C4E2986576400CD41A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA219C4F2986576400CD41A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA219C512986576400CD41A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Ohjooyeo/Preview Content\"";
+				DEVELOPMENT_TEAM = HGQ9YZ4HTR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devming.Ohjooyeo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA219C522986576400CD41A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Ohjooyeo/Preview Content\"";
+				DEVELOPMENT_TEAM = HGQ9YZ4HTR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devming.Ohjooyeo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CA219C542986576400CD41A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HGQ9YZ4HTR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devming.OhjooyeoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ohjooyeo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ohjooyeo";
+			};
+			name = Debug;
+		};
+		CA219C552986576400CD41A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HGQ9YZ4HTR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devming.OhjooyeoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ohjooyeo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ohjooyeo";
+			};
+			name = Release;
+		};
+		CA219C572986576400CD41A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HGQ9YZ4HTR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devming.OhjooyeoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ohjooyeo;
+			};
+			name = Debug;
+		};
+		CA219C582986576400CD41A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HGQ9YZ4HTR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devming.OhjooyeoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ohjooyeo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA219C272986576200CD41A1 /* Build configuration list for PBXProject "Ohjooyeo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA219C4E2986576400CD41A1 /* Debug */,
+				CA219C4F2986576400CD41A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA219C502986576400CD41A1 /* Build configuration list for PBXNativeTarget "Ohjooyeo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA219C512986576400CD41A1 /* Debug */,
+				CA219C522986576400CD41A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA219C532986576400CD41A1 /* Build configuration list for PBXNativeTarget "OhjooyeoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA219C542986576400CD41A1 /* Debug */,
+				CA219C552986576400CD41A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA219C562986576400CD41A1 /* Build configuration list for PBXNativeTarget "OhjooyeoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA219C572986576400CD41A1 /* Debug */,
+				CA219C582986576400CD41A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA219C242986576200CD41A1 /* Project object */;
+}
