@@ -6,12 +6,20 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct OhjooyeoApp: App {
     var body: some Scene {
         WindowGroup {
-            BulletinMainView()
+            let store = Store<
+                BulletinMainReducer.State,
+                BulletinMainReducer.Action
+            >(
+                initialState: BulletinMainReducer.State(items: BulletinItem.makeDummy()),
+                reducer: BulletinMainReducer()
+            )
+            BulletinMainView(store: store)
         }
     }
 }

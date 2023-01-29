@@ -22,6 +22,8 @@ struct BulletinCell: View {
         trailing: 0
     )
     
+    let item: BulletinItem
+    
     var body: some View {
         VStack {
             HStack {
@@ -52,7 +54,7 @@ struct BulletinCell: View {
 
 struct BulletinCell_Previews: PreviewProvider {
     static var previews: some View {
-        BulletinCell()
+        BulletinCell(item: .init(title: ""))
             .previewLayout(.fixed(width: 375.0, height: 80.0))
             .previewLayout(.sizeThatFits)
     }

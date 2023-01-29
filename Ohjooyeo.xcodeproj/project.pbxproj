@@ -15,6 +15,7 @@
 		CA219C5D298658B800CD41A1 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CA219C5C298658B800CD41A1 /* ComposableArchitecture */; };
 		CA219C6029865BD900CD41A1 /* BulletinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C5F29865BD900CD41A1 /* BulletinCell.swift */; };
 		CA219C632986625700CD41A1 /* BulletinItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C622986625700CD41A1 /* BulletinItem.swift */; };
+		CA219C662986631F00CD41A1 /* BulletinMainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C652986631F00CD41A1 /* BulletinMainReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		CA219C462986576400CD41A1 /* OhjooyeoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OhjooyeoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA219C5F29865BD900CD41A1 /* BulletinCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinCell.swift; sourceTree = "<group>"; };
 		CA219C622986625700CD41A1 /* BulletinItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinItem.swift; sourceTree = "<group>"; };
+		CA219C652986631F00CD41A1 /* BulletinMainReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinMainReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,8 @@
 		CA219C592986577700CD41A1 /* WorshipMain */ = {
 			isa = PBXGroup;
 			children = (
+				CA219C6129865BEE00CD41A1 /* DomainModels */,
+				CA219C64298662E500CD41A1 /* Reducers */,
 				CA219C5E29865BC700CD41A1 /* Views */,
 			);
 			path = WorshipMain;
@@ -138,19 +142,26 @@
 		CA219C5E29865BC700CD41A1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CA219C6129865BEE00CD41A1 /* DomainModel */,
 				CA219C312986576200CD41A1 /* BulletinMainView.swift */,
 				CA219C5F29865BD900CD41A1 /* BulletinCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		CA219C6129865BEE00CD41A1 /* DomainModel */ = {
+		CA219C6129865BEE00CD41A1 /* DomainModels */ = {
 			isa = PBXGroup;
 			children = (
 				CA219C622986625700CD41A1 /* BulletinItem.swift */,
 			);
-			path = DomainModel;
+			path = DomainModels;
+			sourceTree = "<group>";
+		};
+		CA219C64298662E500CD41A1 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				CA219C652986631F00CD41A1 /* BulletinMainReducer.swift */,
+			);
+			path = Reducers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +304,7 @@
 				CA219C302986576200CD41A1 /* OhjooyeoApp.swift in Sources */,
 				CA219C6029865BD900CD41A1 /* BulletinCell.swift in Sources */,
 				CA219C632986625700CD41A1 /* BulletinItem.swift in Sources */,
+				CA219C662986631F00CD41A1 /* BulletinMainReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
