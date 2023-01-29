@@ -10,10 +10,10 @@ import SwiftUI
 struct BulletinMainView: View {
     var body: some View {
         LazyVStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            BulletinCell()
+            BulletinCell()
+            BulletinCell()
+            BulletinCell()
         }
         .padding()
     }

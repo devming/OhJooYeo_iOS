@@ -45,6 +45,8 @@ struct BulletinCell: View {
             .padding(sideEdge)
         }
         .padding(topBottomEdge)
+        .background(.white)
+        .cornerRadius(8)
     }
 }
 
