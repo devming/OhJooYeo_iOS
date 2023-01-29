@@ -1,5 +1,5 @@
 //
-//  WorshipMainView.swift
+//  BulletinMainView.swift
 //  Ohjooyeo
 //
 //  Created by devming on 2023/01/29.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct WorshipMainView: View {
+struct BulletinMainView: View {
     var body: some View {
-        VStack {
+        LazyVStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
@@ -19,8 +19,8 @@ struct WorshipMainView: View {
     }
 }
 
-struct WorshipMainView_Previews: PreviewProvider {
+struct BulletinMainView_Previews: PreviewProvider {
     static var previews: some View {
-        WorshipMainView()
+        BulletinMainView()
     }
 }

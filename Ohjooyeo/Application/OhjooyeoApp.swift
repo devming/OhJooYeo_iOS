@@ -11,7 +11,7 @@ import SwiftUI
 struct OhjooyeoApp: App {
     var body: some Scene {
         WindowGroup {
-            WorshipMainView()
+            BulletinMainView()
         }
     }
 }

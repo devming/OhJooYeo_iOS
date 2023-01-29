@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		CA219C302986576200CD41A1 /* OhjooyeoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C2F2986576200CD41A1 /* OhjooyeoApp.swift */; };
-		CA219C322986576200CD41A1 /* WorshipMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C312986576200CD41A1 /* WorshipMainView.swift */; };
+		CA219C322986576200CD41A1 /* BulletinMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C312986576200CD41A1 /* BulletinMainView.swift */; };
 		CA219C342986576300CD41A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA219C332986576300CD41A1 /* Assets.xcassets */; };
 		CA219C372986576300CD41A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA219C362986576300CD41A1 /* Preview Assets.xcassets */; };
 		CA219C412986576400CD41A1 /* OhjooyeoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C402986576400CD41A1 /* OhjooyeoTests.swift */; };
+		CA219C5D298658B800CD41A1 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CA219C5C298658B800CD41A1 /* ComposableArchitecture */; };
+		CA219C6029865BD900CD41A1 /* BulletinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C5F29865BD900CD41A1 /* BulletinCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +36,13 @@
 /* Begin PBXFileReference section */
 		CA219C2C2986576200CD41A1 /* Ohjooyeo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ohjooyeo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA219C2F2986576200CD41A1 /* OhjooyeoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OhjooyeoApp.swift; sourceTree = "<group>"; };
-		CA219C312986576200CD41A1 /* WorshipMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorshipMainView.swift; sourceTree = "<group>"; };
+		CA219C312986576200CD41A1 /* BulletinMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinMainView.swift; sourceTree = "<group>"; };
 		CA219C332986576300CD41A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA219C362986576300CD41A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA219C3C2986576400CD41A1 /* OhjooyeoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OhjooyeoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA219C402986576400CD41A1 /* OhjooyeoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OhjooyeoTests.swift; sourceTree = "<group>"; };
 		CA219C462986576400CD41A1 /* OhjooyeoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OhjooyeoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA219C5F29865BD900CD41A1 /* BulletinCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA219C5D298658B800CD41A1 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +120,7 @@
 		CA219C592986577700CD41A1 /* WorshipMain */ = {
 			isa = PBXGroup;
 			children = (
-				CA219C312986576200CD41A1 /* WorshipMainView.swift */,
+				CA219C5E29865BC700CD41A1 /* Views */,
 			);
 			path = WorshipMain;
 			sourceTree = "<group>";
@@ -127,6 +131,23 @@
 				CA219C2F2986576200CD41A1 /* OhjooyeoApp.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		CA219C5E29865BC700CD41A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA219C6129865BEE00CD41A1 /* DomainModel */,
+				CA219C312986576200CD41A1 /* BulletinMainView.swift */,
+				CA219C5F29865BD900CD41A1 /* BulletinCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CA219C6129865BEE00CD41A1 /* DomainModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DomainModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +166,9 @@
 			dependencies = (
 			);
 			name = Ohjooyeo;
+			packageProductDependencies = (
+				CA219C5C298658B800CD41A1 /* ComposableArchitecture */,
+			);
 			productName = Ohjooyeo;
 			productReference = CA219C2C2986576200CD41A1 /* Ohjooyeo.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +241,9 @@
 				Base,
 			);
 			mainGroup = CA219C232986576200CD41A1;
+			packageReferences = (
+				CA219C5B298658B800CD41A1 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = CA219C2D2986576200CD41A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA219C322986576200CD41A1 /* WorshipMainView.swift in Sources */,
+				CA219C322986576200CD41A1 /* BulletinMainView.swift in Sources */,
 				CA219C302986576200CD41A1 /* OhjooyeoApp.swift in Sources */,
+				CA219C6029865BD900CD41A1 /* BulletinCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +611,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA219C5B298658B800CD41A1 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA219C5C298658B800CD41A1 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA219C5B298658B800CD41A1 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CA219C242986576200CD41A1 /* Project object */;
 }
