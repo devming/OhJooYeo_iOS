@@ -8,18 +8,11 @@
 import SwiftUI
 
 struct BulletinCell: View {
-    let sideEdge = EdgeInsets(
-        top: 0,
-        leading: 16,
-        bottom: 0,
-        trailing: 16
-    )
-    
     let topBottomEdge = EdgeInsets(
         top: 8,
-        leading: 0,
+        leading: 8,
         bottom: 8,
-        trailing: 0
+        trailing: 8
     )
     
     let item: BulletinItem
@@ -27,35 +20,49 @@ struct BulletinCell: View {
     var body: some View {
         VStack {
             HStack {
-                Text("성경 봉독")
+                Text(item.title)
                     .font(.body)
                     .bold()
+                    .foregroundColor(.black)
                 Spacer()
-                Text("사회자")
+                
+                Text(item.assigner)
                     .font(.caption)
                     .foregroundColor(.gray)
             }
-            .padding(sideEdge)
             
-            Spacer()
-            
-            HStack {
-                Text("내용")
-                    .font(.caption)
-                Spacer()
+            if !item.content.isEmpty {
+                HStack {
+                    Text(item.content)
+                        .font(.caption)
+                        .foregroundColor(.black)
+                    Spacer()
+                }
+                .padding(
+                    EdgeInsets(
+                        top: 1,
+                        leading: 0,
+                        bottom: 0,
+                        trailing: 0
+                    )
+                )
             }
-            .padding(sideEdge)
         }
         .padding(topBottomEdge)
         .background(.white)
         .cornerRadius(8)
+        .shadow(radius: 2)
     }
 }
 
 struct BulletinCell_Previews: PreviewProvider {
     static var previews: some View {
-        BulletinCell(item: .init(title: ""))
-            .previewLayout(.fixed(width: 375.0, height: 80.0))
-            .previewLayout(.sizeThatFits)
+        Group {
+            BulletinCell(item: .init(title: "fff", content: "fsda", assigner: "ddd"))
+                .previewLayout(.sizeThatFits)
+            
+            BulletinCell(item: .init(title: "fff", assigner: "ddd"))
+                .previewLayout(.sizeThatFits)
+        }
     }
 }
