@@ -15,26 +15,29 @@ struct BulletinMainView: View {
     >
     var body: some View {
         WithViewStore(store) { viewStore in
-            VStack {
-                List {
-                    Section {
-                        ForEach(viewStore.items) {
-                            BulletinCell(item: $0)
-                                .listRowSeparator(.hidden)
+            NavigationView {
+                VStack {
+                    List {
+                        Section {
+                            ForEach(viewStore.items) {
+                                BulletinCell(item: $0)
+                                    .listRowSeparator(.hidden)
+                            }
+                        } header: {
+                            Text("1부 예배")
+                                .font(.title3)
+                                .bold()
+                                .fontWidth(.expanded)
+                                .foregroundColor(.black)
                         }
-                    } header: {
-                        Text("예배 순서")
-                            .font(.title)
-                            .bold()
-                            .fontWidth(.expanded)
-                            .foregroundColor(.black)
                     }
+                    .onAppear {
+                        viewStore.send(.didLoad)
+                    }
+                    .listStyle(.plain)
+                    .background(.clear)
                 }
-                .onAppear {
-                    viewStore.send(.didLoad)
-                }
-                .listStyle(.plain)
-                .background(.clear)
+                .navigationTitle("예배 순서")
             }
         }
     }
