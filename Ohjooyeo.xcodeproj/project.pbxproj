@@ -16,6 +16,7 @@
 		CA219C6029865BD900CD41A1 /* BulletinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C5F29865BD900CD41A1 /* BulletinCell.swift */; };
 		CA219C632986625700CD41A1 /* BulletinItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C622986625700CD41A1 /* BulletinItem.swift */; };
 		CA219C662986631F00CD41A1 /* BulletinMainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C652986631F00CD41A1 /* BulletinMainReducer.swift */; };
+		CA290421298FCDE10075EA0D /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = CA290420298FCDE10075EA0D /* CombineMoya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA290421298FCDE10075EA0D /* CombineMoya in Frameworks */,
 				CA219C5D298658B800CD41A1 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,6 +192,7 @@
 			name = Ohjooyeo;
 			packageProductDependencies = (
 				CA219C5C298658B800CD41A1 /* ComposableArchitecture */,
+				CA290420298FCDE10075EA0D /* CombineMoya */,
 			);
 			productName = Ohjooyeo;
 			productReference = CA219C2C2986576200CD41A1 /* Ohjooyeo.app */;
@@ -265,6 +268,7 @@
 			mainGroup = CA219C232986576200CD41A1;
 			packageReferences = (
 				CA219C5B298658B800CD41A1 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				CA29041F298FCDE10075EA0D /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = CA219C2D2986576200CD41A1 /* Products */;
 			projectDirPath = "";
@@ -645,6 +649,14 @@
 				kind = branch;
 			};
 		};
+		CA29041F298FCDE10075EA0D /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = exactVersion;
+				version = 15.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -652,6 +664,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CA219C5B298658B800CD41A1 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		CA290420298FCDE10075EA0D /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA29041F298FCDE10075EA0D /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
