@@ -11,8 +11,8 @@ struct BulletinItem: Identifiable, Equatable {
     init(
         id: UUID = .init(),
         title: String,
-        content: String? = nil,
-        assigner: String? = nil
+        content: String = "",
+        assigner: String = ""
     ) {
         self.id = id
         self.title = title
@@ -22,8 +22,8 @@ struct BulletinItem: Identifiable, Equatable {
     
     let id: UUID
     let title: String
-    let content: String?
-    let assigner: String?
+    let content: String
+    let assigner: String
 }
 
 extension BulletinItem {
