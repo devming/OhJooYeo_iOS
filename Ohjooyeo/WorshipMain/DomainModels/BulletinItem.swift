@@ -47,6 +47,27 @@ extension BulletinItem {
                 title: "말씀",
                 content: "은혜로운 삶",
                 assigner: "목사님"
+            ),
+            BulletinItem(
+                title: "봉헌",
+                content: "은혜로운 삶",
+                assigner: "목사님"
+            ),
+            BulletinItem(
+                title: "봉헌기도",
+                assigner: "목사님"
+            ),
+            BulletinItem(
+                title: "광고",
+                assigner: "사회자"
+            ),
+            BulletinItem(
+                title: "파송찬양",
+                assigner: "다같이"
+            ),
+            BulletinItem(
+                title: "축도",
+                assigner: "목사님"
             )
         ]
     }

@@ -9,6 +9,7 @@ import ComposableArchitecture
 
 struct BulletinMainReducer: ReducerProtocol {
     
+    
     enum Action: Equatable {
         case didLoad
     }
