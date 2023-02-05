@@ -98,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				CA219C5A298657CD00CD41A1 /* Application */,
+				CA29041E298FCAD90075EA0D /* Network */,
 				CA219C592986577700CD41A1 /* WorshipMain */,
 				CA219C332986576300CD41A1 /* Assets.xcassets */,
 				CA219C352986576300CD41A1 /* Preview Content */,
@@ -162,6 +163,13 @@
 				CA219C652986631F00CD41A1 /* BulletinMainReducer.swift */,
 			);
 			path = Reducers;
+			sourceTree = "<group>";
+		};
+		CA29041E298FCAD90075EA0D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
