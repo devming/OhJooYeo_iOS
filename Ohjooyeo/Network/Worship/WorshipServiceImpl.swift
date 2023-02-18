@@ -23,9 +23,10 @@ struct WorshipServiceImpl: WorshipService {
             .eraseToAnyPublisher()
     }
     
-    func fetchBulleinInfo(worshipID: Int) -> AnyPublisher<BulletinResponse, MoyaError> {
+    func fetchBulleinInfo(worshipID: Int) -> AnyPublisher<BulletinItem, MoyaError> {
         return provider.requestPublisher(.fetchBulletinInfo(worshipID: worshipID))
             .map(BulletinResponse.self)
+            .map { $0.toBulletinItem }
             .eraseToAnyPublisher()
     }
 }

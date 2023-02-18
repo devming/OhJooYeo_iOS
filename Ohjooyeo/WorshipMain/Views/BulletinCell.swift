@@ -26,7 +26,7 @@ struct BulletinCell: View {
                     .foregroundColor(.black)
                 Spacer()
                 
-                Text(item.assigner)
+                Text(item.roleOwner)
                     .font(.caption)
                     .foregroundColor(.gray)
             }
@@ -58,10 +58,10 @@ struct BulletinCell: View {
 struct BulletinCell_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            BulletinCell(item: .init(id: 0, title: "fff", content: "fsda", assigner: "ddd"))
+            BulletinCell(item: .init(id: 0, title: "fff", content: "fsda", roleOwner: "ddd"))
                 .previewLayout(.sizeThatFits)
             
-            BulletinCell(item: .init(id: 1, title: "fff", assigner: "ddd"))
+            BulletinCell(item: .init(id: 1, title: "fff", roleOwner: "ddd"))
                 .previewLayout(.sizeThatFits)
         }
     }

@@ -12,8 +12,22 @@ struct BulletinResponse: Decodable {
     let title: String
     let roleOwner: String
     let content: String
-    let bulletinType: String    // -> Type
+    let bulletinType: String
     let isStandUp: Bool
     let type: String
     let relatedUrls: [String]
+}
+
+extension BulletinResponse {
+    var toBulletinItem: BulletinItem {
+        return BulletinItem(
+            id: id,
+            title: title,
+            content: content,
+            roleOwner: roleOwner,
+            isStandUP: isStandUp,
+            itemType: type,
+            relatedURLs: relatedUrls
+        )
+    }
 }

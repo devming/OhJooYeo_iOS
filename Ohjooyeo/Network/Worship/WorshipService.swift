@@ -14,5 +14,5 @@ protocol WorshipService {
     var provider: MoyaProvider<WorshipAPI> { get set }
     
     func fetchWorshipIDs(date: String?) -> AnyPublisher<WorshipsResponse, MoyaError>
-    func fetchBulleinInfo(worshipID: Int) -> AnyPublisher<BulletinResponse, MoyaError>
+    func fetchBulleinInfo(worshipID: Int) -> AnyPublisher<BulletinItem, MoyaError>
 }
