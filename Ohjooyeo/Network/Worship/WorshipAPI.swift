@@ -8,24 +8,42 @@
 import Moya
 
 enum WorshipAPI: BaseTargetType {
-    case fetchWorshipInfo
+    case fetchWorshipIDs(date: String?)
+    case fetchBulletinInfo(worshipID: Int)
 }
 
 extension WorshipAPI {
     var path: String {
-        return ""
+        switch self {
+        case let .fetchWorshipIDs(date):
+            if let date = date {
+                return "/worshipIds/\(date)"
+            } else {
+                return "/worshipIds"
+            }
+        case let .fetchBulletinInfo(worshipID):
+            return "/bulletin/\(worshipID)"
+        }
     }
     
     var method: Moya.Method {
-        return .get
+        switch self {
+        case .fetchWorshipIDs,
+                .fetchBulletinInfo:
+            return .get
+        }
     }
     
     var task: Moya.Task {
-        return .requestPlain
+        switch self {
+        case .fetchWorshipIDs,
+                .fetchBulletinInfo:
+            return .requestPlain
+        }
     }
     
     var headers: HTTPHeader? {
-        return nil
+        return baseHeaders
     }
 }
 

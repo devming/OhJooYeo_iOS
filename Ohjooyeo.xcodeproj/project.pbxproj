@@ -18,8 +18,13 @@
 		CA219C662986631F00CD41A1 /* BulletinMainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C652986631F00CD41A1 /* BulletinMainReducer.swift */; };
 		CA290421298FCDE10075EA0D /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = CA290420298FCDE10075EA0D /* CombineMoya */; };
 		CA290424298FCEBD0075EA0D /* WorshipAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA290423298FCEBD0075EA0D /* WorshipAPI.swift */; };
-		CA290428298FD0480075EA0D /* WorshipService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA290427298FD0480075EA0D /* WorshipService.swift */; };
+		CA290428298FD0480075EA0D /* WorshipServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA290427298FD0480075EA0D /* WorshipServiceImpl.swift */; };
 		CA3AC837299FAE5D005E8491 /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AC836299FAE5D005E8491 /* BaseTargetType.swift */; };
+		CA3AD8D729A0B429007BFB16 /* WorshipsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AD8D629A0B429007BFB16 /* WorshipsResponse.swift */; };
+		CA3AD8D929A0B905007BFB16 /* WorshipResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AD8D829A0B905007BFB16 /* WorshipResponse.swift */; };
+		CA3AD8DB29A0B9C6007BFB16 /* Worship.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AD8DA29A0B9C6007BFB16 /* Worship.swift */; };
+		CA3AD8DD29A0BB40007BFB16 /* WorshipService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AD8DC29A0BB40007BFB16 /* WorshipService.swift */; };
+		CA3AD8DF29A0BD0B007BFB16 /* BulletinResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AD8DE29A0BD0B007BFB16 /* BulletinResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +57,13 @@
 		CA219C622986625700CD41A1 /* BulletinItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinItem.swift; sourceTree = "<group>"; };
 		CA219C652986631F00CD41A1 /* BulletinMainReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinMainReducer.swift; sourceTree = "<group>"; };
 		CA290423298FCEBD0075EA0D /* WorshipAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorshipAPI.swift; sourceTree = "<group>"; };
-		CA290427298FD0480075EA0D /* WorshipService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorshipService.swift; sourceTree = "<group>"; };
+		CA290427298FD0480075EA0D /* WorshipServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorshipServiceImpl.swift; sourceTree = "<group>"; };
 		CA3AC836299FAE5D005E8491 /* BaseTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
+		CA3AD8D629A0B429007BFB16 /* WorshipsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorshipsResponse.swift; sourceTree = "<group>"; };
+		CA3AD8D829A0B905007BFB16 /* WorshipResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorshipResponse.swift; sourceTree = "<group>"; };
+		CA3AD8DA29A0B9C6007BFB16 /* Worship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Worship.swift; sourceTree = "<group>"; };
+		CA3AD8DC29A0BB40007BFB16 /* WorshipService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorshipService.swift; sourceTree = "<group>"; };
+		CA3AD8DE29A0BD0B007BFB16 /* BulletinResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +170,7 @@
 		CA219C6129865BEE00CD41A1 /* DomainModels */ = {
 			isa = PBXGroup;
 			children = (
+				CA3AD8DA29A0B9C6007BFB16 /* Worship.swift */,
 				CA219C622986625700CD41A1 /* BulletinItem.swift */,
 			);
 			path = DomainModels;
@@ -187,7 +198,8 @@
 			children = (
 				CA3AC83A299FB125005E8491 /* DTO */,
 				CA290423298FCEBD0075EA0D /* WorshipAPI.swift */,
-				CA290427298FD0480075EA0D /* WorshipService.swift */,
+				CA290427298FD0480075EA0D /* WorshipServiceImpl.swift */,
+				CA3AD8DC29A0BB40007BFB16 /* WorshipService.swift */,
 			);
 			path = Worship;
 			sourceTree = "<group>";
@@ -203,6 +215,9 @@
 		CA3AC83A299FB125005E8491 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
+				CA3AD8D629A0B429007BFB16 /* WorshipsResponse.swift */,
+				CA3AD8D829A0B905007BFB16 /* WorshipResponse.swift */,
+				CA3AD8DE29A0BD0B007BFB16 /* BulletinResponse.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -345,11 +360,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA3AD8DD29A0BB40007BFB16 /* WorshipService.swift in Sources */,
 				CA3AC837299FAE5D005E8491 /* BaseTargetType.swift in Sources */,
+				CA3AD8D729A0B429007BFB16 /* WorshipsResponse.swift in Sources */,
+				CA3AD8DF29A0BD0B007BFB16 /* BulletinResponse.swift in Sources */,
 				CA219C322986576200CD41A1 /* BulletinMainView.swift in Sources */,
 				CA219C302986576200CD41A1 /* OhjooyeoApp.swift in Sources */,
+				CA3AD8DB29A0B9C6007BFB16 /* Worship.swift in Sources */,
+				CA3AD8D929A0B905007BFB16 /* WorshipResponse.swift in Sources */,
 				CA219C6029865BD900CD41A1 /* BulletinCell.swift in Sources */,
-				CA290428298FD0480075EA0D /* WorshipService.swift in Sources */,
+				CA290428298FD0480075EA0D /* WorshipServiceImpl.swift in Sources */,
 				CA219C632986625700CD41A1 /* BulletinItem.swift in Sources */,
 				CA219C662986631F00CD41A1 /* BulletinMainReducer.swift in Sources */,
 				CA290424298FCEBD0075EA0D /* WorshipAPI.swift in Sources */,
