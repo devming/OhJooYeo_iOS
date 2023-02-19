@@ -8,9 +8,12 @@
 import ComposableArchitecture
 
 struct BulletinMainReducer: ReducerProtocol {
+    
+    @Dependency(\.worshipService) var worshipService
 
     enum Action: Equatable {
         case didLoad
+        case setupBulletin(TaskResult<[BulletinItem]>)
     }
     
     struct State: Equatable {
@@ -20,7 +23,24 @@ struct BulletinMainReducer: ReducerProtocol {
     func reduce(into state: inout State, action: Action) -> EffectTask<Action> {
         switch action {
         case .didLoad:
-            state.items = BulletinItem.makeDummy()
+            return .task {
+                return await .setupBulletin(
+                    TaskResult {
+                        let bulletinOrders = try await worshipService
+                            .fetchBulleinInfo(worshipID: 1)
+                            .bulletinOrders
+                        return bulletinOrders.map { $0.toBulletinItem }
+                    }
+                )
+            }
+        case let .setupBulletin(items):
+            do {
+                state.items = try items.value
+                
+                print("### \(state.items)")
+            } catch {
+                print("### [ERROR] \(error)")
+            }
         }
         return .none
     }

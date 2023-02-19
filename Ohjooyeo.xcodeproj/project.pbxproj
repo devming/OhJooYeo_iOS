@@ -16,15 +16,18 @@
 		CA219C6029865BD900CD41A1 /* BulletinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C5F29865BD900CD41A1 /* BulletinCell.swift */; };
 		CA219C632986625700CD41A1 /* BulletinItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C622986625700CD41A1 /* BulletinItem.swift */; };
 		CA219C662986631F00CD41A1 /* BulletinMainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA219C652986631F00CD41A1 /* BulletinMainReducer.swift */; };
-		CA290421298FCDE10075EA0D /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = CA290420298FCDE10075EA0D /* CombineMoya */; };
 		CA290424298FCEBD0075EA0D /* WorshipAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA290423298FCEBD0075EA0D /* WorshipAPI.swift */; };
 		CA290428298FD0480075EA0D /* WorshipServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA290427298FD0480075EA0D /* WorshipServiceImpl.swift */; };
-		CA3AC837299FAE5D005E8491 /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AC836299FAE5D005E8491 /* BaseTargetType.swift */; };
+		CA3AC837299FAE5D005E8491 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AC836299FAE5D005E8491 /* NetworkProtocol.swift */; };
 		CA3AD8D729A0B429007BFB16 /* WorshipsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AD8D629A0B429007BFB16 /* WorshipsResponse.swift */; };
 		CA3AD8D929A0B905007BFB16 /* WorshipResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AD8D829A0B905007BFB16 /* WorshipResponse.swift */; };
 		CA3AD8DB29A0B9C6007BFB16 /* Worship.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AD8DA29A0B9C6007BFB16 /* Worship.swift */; };
 		CA3AD8DD29A0BB40007BFB16 /* WorshipService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AD8DC29A0BB40007BFB16 /* WorshipService.swift */; };
-		CA3AD8DF29A0BD0B007BFB16 /* BulletinResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AD8DE29A0BD0B007BFB16 /* BulletinResponse.swift */; };
+		CA3AD8DF29A0BD0B007BFB16 /* BulletinItemResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AD8DE29A0BD0B007BFB16 /* BulletinItemResponse.swift */; };
+		CA469E8D29A22D8E0061E640 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CA469E8C29A22D8E0061E640 /* Alamofire */; };
+		CA469E8F29A22E050061E640 /* APIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA469E8E29A22E050061E640 /* APIType.swift */; };
+		CA469E9129A22F3A0061E640 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA469E9029A22F3A0061E640 /* NetworkManager.swift */; };
+		CA5B3DB729A23D39000F7C2B /* BulletinResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5B3DB629A23D39000F7C2B /* BulletinResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,12 +61,16 @@
 		CA219C652986631F00CD41A1 /* BulletinMainReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinMainReducer.swift; sourceTree = "<group>"; };
 		CA290423298FCEBD0075EA0D /* WorshipAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorshipAPI.swift; sourceTree = "<group>"; };
 		CA290427298FD0480075EA0D /* WorshipServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorshipServiceImpl.swift; sourceTree = "<group>"; };
-		CA3AC836299FAE5D005E8491 /* BaseTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
+		CA3AC836299FAE5D005E8491 /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
 		CA3AD8D629A0B429007BFB16 /* WorshipsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorshipsResponse.swift; sourceTree = "<group>"; };
 		CA3AD8D829A0B905007BFB16 /* WorshipResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorshipResponse.swift; sourceTree = "<group>"; };
 		CA3AD8DA29A0B9C6007BFB16 /* Worship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Worship.swift; sourceTree = "<group>"; };
 		CA3AD8DC29A0BB40007BFB16 /* WorshipService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorshipService.swift; sourceTree = "<group>"; };
-		CA3AD8DE29A0BD0B007BFB16 /* BulletinResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinResponse.swift; sourceTree = "<group>"; };
+		CA3AD8DE29A0BD0B007BFB16 /* BulletinItemResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinItemResponse.swift; sourceTree = "<group>"; };
+		CA469E8E29A22E050061E640 /* APIType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIType.swift; sourceTree = "<group>"; };
+		CA469E9029A22F3A0061E640 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CA469E9429A23BD80061E640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CA5B3DB629A23D39000F7C2B /* BulletinResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA290421298FCDE10075EA0D /* CombineMoya in Frameworks */,
 				CA219C5D298658B800CD41A1 /* ComposableArchitecture in Frameworks */,
+				CA469E8D29A22D8E0061E640 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +122,7 @@
 		CA219C2E2986576200CD41A1 /* Ohjooyeo */ = {
 			isa = PBXGroup;
 			children = (
+				CA469E9429A23BD80061E640 /* Info.plist */,
 				CA219C5A298657CD00CD41A1 /* Application */,
 				CA29041E298FCAD90075EA0D /* Network */,
 				CA219C592986577700CD41A1 /* WorshipMain */,
@@ -207,7 +215,9 @@
 		CA3AC835299FAE51005E8491 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				CA3AC836299FAE5D005E8491 /* BaseTargetType.swift */,
+				CA3AC836299FAE5D005E8491 /* NetworkProtocol.swift */,
+				CA469E9029A22F3A0061E640 /* NetworkManager.swift */,
+				CA469E8E29A22E050061E640 /* APIType.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -217,7 +227,8 @@
 			children = (
 				CA3AD8D629A0B429007BFB16 /* WorshipsResponse.swift */,
 				CA3AD8D829A0B905007BFB16 /* WorshipResponse.swift */,
-				CA3AD8DE29A0BD0B007BFB16 /* BulletinResponse.swift */,
+				CA3AD8DE29A0BD0B007BFB16 /* BulletinItemResponse.swift */,
+				CA5B3DB629A23D39000F7C2B /* BulletinResponse.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -240,7 +251,7 @@
 			name = Ohjooyeo;
 			packageProductDependencies = (
 				CA219C5C298658B800CD41A1 /* ComposableArchitecture */,
-				CA290420298FCDE10075EA0D /* CombineMoya */,
+				CA469E8C29A22D8E0061E640 /* Alamofire */,
 			);
 			productName = Ohjooyeo;
 			productReference = CA219C2C2986576200CD41A1 /* Ohjooyeo.app */;
@@ -316,7 +327,7 @@
 			mainGroup = CA219C232986576200CD41A1;
 			packageReferences = (
 				CA219C5B298658B800CD41A1 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
-				CA29041F298FCDE10075EA0D /* XCRemoteSwiftPackageReference "Moya" */,
+				CA469E8B29A22D8E0061E640 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = CA219C2D2986576200CD41A1 /* Products */;
 			projectDirPath = "";
@@ -360,10 +371,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA469E8F29A22E050061E640 /* APIType.swift in Sources */,
 				CA3AD8DD29A0BB40007BFB16 /* WorshipService.swift in Sources */,
-				CA3AC837299FAE5D005E8491 /* BaseTargetType.swift in Sources */,
+				CA3AC837299FAE5D005E8491 /* NetworkProtocol.swift in Sources */,
 				CA3AD8D729A0B429007BFB16 /* WorshipsResponse.swift in Sources */,
-				CA3AD8DF29A0BD0B007BFB16 /* BulletinResponse.swift in Sources */,
+				CA3AD8DF29A0BD0B007BFB16 /* BulletinItemResponse.swift in Sources */,
 				CA219C322986576200CD41A1 /* BulletinMainView.swift in Sources */,
 				CA219C302986576200CD41A1 /* OhjooyeoApp.swift in Sources */,
 				CA3AD8DB29A0B9C6007BFB16 /* Worship.swift in Sources */,
@@ -371,8 +383,10 @@
 				CA219C6029865BD900CD41A1 /* BulletinCell.swift in Sources */,
 				CA290428298FD0480075EA0D /* WorshipServiceImpl.swift in Sources */,
 				CA219C632986625700CD41A1 /* BulletinItem.swift in Sources */,
+				CA469E9129A22F3A0061E640 /* NetworkManager.swift in Sources */,
 				CA219C662986631F00CD41A1 /* BulletinMainReducer.swift in Sources */,
 				CA290424298FCEBD0075EA0D /* WorshipAPI.swift in Sources */,
+				CA5B3DB729A23D39000F7C2B /* BulletinResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +546,9 @@
 				DEVELOPMENT_TEAM = HGQ9YZ4HTR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ohjooyeo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -561,6 +578,9 @@
 				DEVELOPMENT_TEAM = HGQ9YZ4HTR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ohjooyeo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -705,12 +725,12 @@
 				kind = branch;
 			};
 		};
-		CA29041F298FCDE10075EA0D /* XCRemoteSwiftPackageReference "Moya" */ = {
+		CA469E8B29A22D8E0061E640 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Moya/Moya";
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
-				kind = exactVersion;
-				version = 15.0.0;
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -721,10 +741,10 @@
 			package = CA219C5B298658B800CD41A1 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
 		};
-		CA290420298FCDE10075EA0D /* CombineMoya */ = {
+		CA469E8C29A22D8E0061E640 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CA29041F298FCDE10075EA0D /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = CombineMoya;
+			package = CA469E8B29A22D8E0061E640 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

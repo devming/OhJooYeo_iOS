@@ -6,27 +6,20 @@
 //
 
 import Foundation
-import Moya
-import CombineMoya
 import Combine
 
 struct WorshipServiceImpl: WorshipService {
-    var provider: MoyaProvider<WorshipAPI>
+    var provider: NetworkProtocol
     
-    init(provider: MoyaProvider<WorshipAPI>) {
+    init(provider: NetworkProtocol) {
         self.provider = provider
     }
     
-    func fetchWorshipIDs(date: String?) -> AnyPublisher<WorshipsResponse, MoyaError> {
-        return provider.requestPublisher(.fetchWorshipIDs(date: date))
-            .map(WorshipsResponse.self)
-            .eraseToAnyPublisher()
+    func fetchWorshipIDs(date: String?) async throws -> WorshipsResponse {
+        return try await provider.request(api: WorshipAPI.fetchWorshipIDs(date: date))
     }
     
-    func fetchBulleinInfo(worshipID: Int) -> AnyPublisher<BulletinItem, MoyaError> {
-        return provider.requestPublisher(.fetchBulletinInfo(worshipID: worshipID))
-            .map(BulletinResponse.self)
-            .map { $0.toBulletinItem }
-            .eraseToAnyPublisher()
+    func fetchBulleinInfo(worshipID: Int) async throws -> BulletinResponse {
+        return try await provider.request(api: WorshipAPI.fetchBulletinInfo(worshipID: worshipID))
     }
 }

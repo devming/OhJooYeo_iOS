@@ -5,9 +5,9 @@
 //  Created by devming on 2023/02/05.
 //
 
-import Moya
+import Alamofire
 
-enum WorshipAPI: BaseTargetType {
+enum WorshipAPI: APIType {
     case fetchWorshipIDs(date: String?)
     case fetchBulletinInfo(worshipID: Int)
 }
@@ -26,7 +26,7 @@ extension WorshipAPI {
         }
     }
     
-    var method: Moya.Method {
+    var method: HTTPMethod {
         switch self {
         case .fetchWorshipIDs,
                 .fetchBulletinInfo:
@@ -34,15 +34,15 @@ extension WorshipAPI {
         }
     }
     
-    var task: Moya.Task {
+    var encoding: ParameterEncoding {
         switch self {
         case .fetchWorshipIDs,
                 .fetchBulletinInfo:
-            return .requestPlain
+            return URLEncoding.default
         }
     }
     
-    var headers: HTTPHeader? {
+    var headers: HTTPHeaders? {
         return baseHeaders
     }
 }

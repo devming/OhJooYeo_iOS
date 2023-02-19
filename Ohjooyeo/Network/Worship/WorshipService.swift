@@ -6,13 +6,23 @@
 //
 
 import Foundation
-import Moya
-import CombineMoya
 import Combine
+import ComposableArchitecture
 
 protocol WorshipService {
-    var provider: MoyaProvider<WorshipAPI> { get set }
+    var provider: NetworkProtocol { get set }
     
-    func fetchWorshipIDs(date: String?) -> AnyPublisher<WorshipsResponse, MoyaError>
-    func fetchBulleinInfo(worshipID: Int) -> AnyPublisher<BulletinItem, MoyaError>
+    func fetchWorshipIDs(date: String?) async throws -> WorshipsResponse
+    func fetchBulleinInfo(worshipID: Int) async throws -> BulletinResponse
+}
+
+private enum WorshipServiceKey: DependencyKey {
+    static let liveValue = WorshipServiceImpl(provider: NetworkManager.shared)
+}
+
+extension DependencyValues {
+    var worshipService: WorshipServiceImpl {
+        get { self[WorshipServiceKey.self] }
+        set { self[WorshipServiceKey.self] = newValue }
+    }
 }

@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Moya
 
 struct WorshipsResponse: Decodable {
     var worships: [WorshipResponse]
