@@ -37,14 +37,19 @@ enum APIError: Error, Equatable {
     var alertingType: ErrorAlertType {
         switch self {
         case .unknownError, .networkError:
-            return .alert
+            return .alertAndRetry
         case .apiError, .invalidJsonError, .dataDoesntExistError:
-            return .ignore
+            return .alert
         }
     }
 }
 
-enum ErrorAlertType: Int {
-    case alert
-    case ignore
+struct ErrorAlertType: OptionSet {
+    var rawValue: Int
+    
+    static let alert = ErrorAlertType(rawValue: 1 << 1)
+    static let ignore = ErrorAlertType(rawValue: 1 << 2)
+    static let retry = ErrorAlertType(rawValue: 1 << 3)
+    
+    static let alertAndRetry: ErrorAlertType = [.alert, .retry]
 }
