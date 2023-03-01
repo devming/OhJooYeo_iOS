@@ -95,3 +95,12 @@ class NetworkManager: NetworkProtocol {
         }
     }
 }
+
+extension Error {
+    var localizedDescription: String {
+        guard let error = self as? APIError else {
+            return APIError.unknownError(nil).localizedDescription
+        }
+        return error.localizedDescription
+    }
+}
