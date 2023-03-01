@@ -37,7 +37,7 @@ struct BulletinMainView: View {
                     .listStyle(.plain)
                     .background(.clear)
                     .alert(
-                        LocalizedStringKey(viewStore.errorMessage ?? "Errr"),
+                        LocalizedStringKey(viewStore.state.errorMessage ?? ""),
                         isPresented: viewStore.binding(
                             get: { $0.errorMessage != nil },
                             send: .alertDismissed
@@ -45,9 +45,6 @@ struct BulletinMainView: View {
                         presenting: Void()) { _ in }
                 }
                 .navigationTitle("예배 순서")
-                .onTapGesture {
-                    viewStore.send(.didLoad)
-                }
             }
         }
     }
