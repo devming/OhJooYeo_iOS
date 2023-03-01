@@ -14,13 +14,13 @@ struct BulletinMainView: View {
         BulletinMainReducer.Action
     >
     var body: some View {
-        WithViewStore(store) { viewStore in
+        WithViewStore(store, observe: { $0 }) { viewStore in
             NavigationView {
                 VStack {
                     List {
                         Section {
-                            ForEach(viewStore.items) {
-                                BulletinCell(item: $0)
+                            ForEach(viewStore.state.items) { item in
+                                BulletinCell(item: item)
                                     .listRowSeparator(.hidden)
                             }
                         } header: {
@@ -36,8 +36,18 @@ struct BulletinMainView: View {
                     }
                     .listStyle(.plain)
                     .background(.clear)
+                    .alert(
+                        LocalizedStringKey(viewStore.errorMessage ?? "Errr"),
+                        isPresented: viewStore.binding(
+                            get: { $0.errorMessage != nil },
+                            send: .alertDismissed
+                        ),
+                        presenting: Void()) { _ in }
                 }
                 .navigationTitle("예배 순서")
+                .onTapGesture {
+                    viewStore.send(.didLoad)
+                }
             }
         }
     }
@@ -49,9 +59,14 @@ struct BulletinMainView_Previews: PreviewProvider {
             BulletinMainReducer.State,
             BulletinMainReducer.Action
         >(
-            initialState: BulletinMainReducer.State(),
+            initialState: BulletinMainReducer.State(items: BulletinItem.makeDummy()),
             reducer: BulletinMainReducer()
         )
         return BulletinMainView(store: store)
     }
+}
+
+struct MainAlert: Identifiable {
+    var message: String
+    var id: String { self.message }
 }

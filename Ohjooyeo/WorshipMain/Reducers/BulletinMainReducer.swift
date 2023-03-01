@@ -5,6 +5,7 @@
 //  Created by devming on 2023/01/29.
 //
 
+import Foundation
 import ComposableArchitecture
 
 struct BulletinMainReducer: ReducerProtocol {
@@ -14,10 +15,13 @@ struct BulletinMainReducer: ReducerProtocol {
     enum Action: Equatable {
         case didLoad
         case setupBulletin(TaskResult<[BulletinItem]>)
+        case alertDismissed
     }
     
     struct State: Equatable {
+        var emcee = ""
         var items = [BulletinItem]()
+        var errorMessage: String?
     }
     
     func reduce(into state: inout State, action: Action) -> EffectTask<Action> {
@@ -33,15 +37,15 @@ struct BulletinMainReducer: ReducerProtocol {
                     }
                 )
             }
-        case let .setupBulletin(items):
-            do {
-                state.items = try items.value
-                
-                print("### \(state.items)")
-            } catch {
-                print("### [ERROR] \(error)")
-            }
+        case let .setupBulletin(.success(items)):
+            state.items = items
+            return .none
+        case let .setupBulletin(.failure(error)):
+            state.errorMessage = error.localizedDescription
+            return .none
+        case .alertDismissed:
+            state.errorMessage = nil
+            return .none
         }
-        return .none
     }
 }
