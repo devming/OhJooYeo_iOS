@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Combine
 
 struct WorshipServiceImpl: WorshipService {
     var provider: NetworkProtocol

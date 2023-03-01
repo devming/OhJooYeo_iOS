@@ -10,18 +10,20 @@ import Combine
 import ComposableArchitecture
 
 protocol WorshipService {
-    var provider: NetworkProtocol { get set }
-    
     func fetchWorshipIDs(date: String?) async throws -> WorshipsResponse
     func fetchBulleinInfo(worshipID: Int) async throws -> BulletinResponse
 }
 
-private enum WorshipServiceKey: DependencyKey {
-    static let liveValue = WorshipServiceImpl(provider: NetworkManager.shared)
+enum WorshipServiceKey: DependencyKey {
+    typealias Value = WorshipService
+    
+    static var liveValue: Value = WorshipServiceImpl(provider: NetworkManager.shared)
+    static var testValue: Value = WorshipServiceMock()
+    static var previewValue: Value = WorshipServiceMock()
 }
 
 extension DependencyValues {
-    var worshipService: WorshipServiceImpl {
+    var worshipService: WorshipService {
         get { self[WorshipServiceKey.self] }
         set { self[WorshipServiceKey.self] = newValue }
     }

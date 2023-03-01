@@ -10,8 +10,8 @@ import ComposableArchitecture
 
 struct BulletinMainView: View {
     let store: Store<
-        BulletinMainReducer.State,
-        BulletinMainReducer.Action
+        BulletinMain.State,
+        BulletinMain.Action
     >
     var body: some View {
         WithViewStore(store, observe: { $0 }) { viewStore in
@@ -53,11 +53,14 @@ struct BulletinMainView: View {
 struct BulletinMainView_Previews: PreviewProvider {
     static var previews: some View {
         let store = Store<
-            BulletinMainReducer.State,
-            BulletinMainReducer.Action
+            BulletinMain.State,
+            BulletinMain.Action
         >(
-            initialState: BulletinMainReducer.State(items: BulletinItem.makeDummy()),
-            reducer: BulletinMainReducer()
+            initialState: BulletinMain.State(items: BulletinItem.makeDummy()),
+            reducer: BulletinMain(),
+            prepareDependencies: { dependencies in
+                dependencies.worshipService = WorshipServiceKey.previewValue
+            }
         )
         return BulletinMainView(store: store)
     }

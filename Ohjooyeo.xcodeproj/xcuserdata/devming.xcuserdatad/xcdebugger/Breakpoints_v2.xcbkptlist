@@ -3,4 +3,86 @@
    uuid = "3747D730-6391-4AAC-B1ED-700F78C4F654"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32CB11F5-8326-40C6-A18F-5DFEF46D9743"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ohjooyeo/WorshipMain/Reducers/BulletinMain.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "reduce(into:action:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "32CB11F5-8326-40C6-A18F-5DFEF46D9743 - 452eda2cc6c17903"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; Ohjooyeo.BulletinMain.Action in Ohjooyeo.BulletinMain.reduce(into: inout Ohjooyeo.BulletinMain.State, action: Ohjooyeo.BulletinMain.Action) -&gt; ComposableArchitecture.EffectPublisher&lt;Ohjooyeo.BulletinMain.Action, Swift.Never&gt;"
+                  moduleName = "Ohjooyeo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/devming/DeveloperMing/SideProjects/Ohjooyeo/Ohjooyeo/WorshipMain/Reducers/BulletinMain.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "32CB11F5-8326-40C6-A18F-5DFEF46D9743 - d0b05c7c3604f90f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async -&gt; Ohjooyeo.BulletinMain.Action in Ohjooyeo.BulletinMain.reduce(into: inout Ohjooyeo.BulletinMain.State, action: Ohjooyeo.BulletinMain.Action) -&gt; ComposableArchitecture.EffectPublisher&lt;Ohjooyeo.BulletinMain.Action, Swift.Never&gt;"
+                  moduleName = "Ohjooyeo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/devming/DeveloperMing/SideProjects/Ohjooyeo/Ohjooyeo/WorshipMain/Reducers/BulletinMain.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D8571CCF-A860-4E2A-9FE6-867628020DD1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ohjooyeo/Application/OhjooyeoApp.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "61B30541-4414-47D3-9289-0E9271C674C4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OhjooyeoTests/WorshipMain/BulletinMainTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "test_WorshipMain&#xd654;&#xba74;&#xc9c4;&#xc785;&#xc2dc;_&#xc8fc;&#xbcf4;API&#xd638;&#xcd9c;()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

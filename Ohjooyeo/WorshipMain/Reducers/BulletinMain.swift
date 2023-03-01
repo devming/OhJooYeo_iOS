@@ -1,5 +1,5 @@
 //
-//  BulletinMainReducer.swift
+//  BulletinMain.swift
 //  Ohjooyeo
 //
 //  Created by devming on 2023/01/29.
@@ -8,7 +8,8 @@
 import Foundation
 import ComposableArchitecture
 
-struct BulletinMainReducer: ReducerProtocol {
+@MainActor
+struct BulletinMain: ReducerProtocol {
     
     @Dependency(\.worshipService) var worshipService
 
@@ -24,7 +25,7 @@ struct BulletinMainReducer: ReducerProtocol {
         var errorMessage: String?
     }
     
-    func reduce(into state: inout State, action: Action) -> EffectTask<Action> {
+    nonisolated func reduce(into state: inout State, action: Action) -> EffectTask<Action> {
         switch action {
         case .didLoad:
             return .task {

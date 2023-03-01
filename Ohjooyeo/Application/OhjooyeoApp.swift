@@ -11,13 +11,16 @@ import ComposableArchitecture
 @main
 struct OhjooyeoApp: App {
     var body: some Scene {
-        WindowGroup {
+        WindowGroup<BulletinMainView> {
             let store = Store<
-                BulletinMainReducer.State,
-                BulletinMainReducer.Action
+                BulletinMain.State,
+                BulletinMain.Action
             >(
-                initialState: BulletinMainReducer.State(),
-                reducer: BulletinMainReducer()
+                initialState: BulletinMain.State(),
+                reducer: BulletinMain(),
+                prepareDependencies: { dependencies in
+                    dependencies.worshipService = WorshipServiceKey.liveValue
+                }
             )
             BulletinMainView(store: store)
         }

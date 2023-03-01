@@ -53,7 +53,7 @@ class NetworkManager: NetworkProtocol {
             print("🟢                          🟢")
             print("🟢 Success Network Response 🟢")
             print("🟢                          🟢")
-            
+            print("📦 \(request)")
             return request
         } catch {
             print("")
