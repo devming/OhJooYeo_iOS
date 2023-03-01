@@ -16,7 +16,7 @@ struct OhjooyeoApp: App {
                 BulletinMainReducer.State,
                 BulletinMainReducer.Action
             >(
-                initialState: BulletinMainReducer.State(items: BulletinItem.makeDummy()),
+                initialState: BulletinMainReducer.State(),
                 reducer: BulletinMainReducer()
             )
             BulletinMainView(store: store)

@@ -30,7 +30,7 @@ extension APIType {
         return ""
     }
     
-    var parameters: [String : Any] {
+    var parameters: [String: Any] {
         return [String: Any]()
     }
     
