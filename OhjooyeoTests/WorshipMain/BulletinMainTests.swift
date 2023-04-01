@@ -9,7 +9,7 @@ import XCTest
 import ComposableArchitecture
 @testable import Ohjooyeo
 
-final class BulletinMainTests: XCTestCase {
+final class BulletinMainTests: BaseTests {
 
     private var bulletinItems: [BulletinItem]!
     
@@ -28,7 +28,6 @@ final class BulletinMainTests: XCTestCase {
     
     @MainActor
     func test_WorshipMain화면진입시_주보API호출() async {
-        
         let store = TestStore(
             initialState: BulletinMain.State(items: bulletinItems),
             reducer: BulletinMain(),

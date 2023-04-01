@@ -29,6 +29,7 @@
 		CA469E8D29A22D8E0061E640 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CA469E8C29A22D8E0061E640 /* Alamofire */; };
 		CA469E8F29A22E050061E640 /* APIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA469E8E29A22E050061E640 /* APIType.swift */; };
 		CA469E9129A22F3A0061E640 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA469E9029A22F3A0061E640 /* NetworkManager.swift */; };
+		CA57A80729D7F73400A3563A /* BaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA57A80629D7F73400A3563A /* BaseTests.swift */; };
 		CA5B3DB729A23D39000F7C2B /* BulletinResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5B3DB629A23D39000F7C2B /* BulletinResponse.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		CA469E8E29A22E050061E640 /* APIType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIType.swift; sourceTree = "<group>"; };
 		CA469E9029A22F3A0061E640 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CA469E9429A23BD80061E640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CA57A80629D7F73400A3563A /* BaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTests.swift; sourceTree = "<group>"; };
 		CA5B3DB629A23D39000F7C2B /* BulletinResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +134,7 @@
 		CA219C3F2986576400CD41A1 /* OhjooyeoTests */ = {
 			isa = PBXGroup;
 			children = (
+				CA57A80629D7F73400A3563A /* BaseTests.swift */,
 				CA36DDA329AF36AA003A0A65 /* WorshipMain */,
 			);
 			path = OhjooyeoTests;
@@ -382,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA57A80729D7F73400A3563A /* BaseTests.swift in Sources */,
 				CA219C412986576400CD41A1 /* BulletinMainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
